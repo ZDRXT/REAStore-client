@@ -1,0 +1,754 @@
+[
+    {
+        "id": 11,
+        "link": "gta5",
+        "name": "GTA V",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+
+        "genre": "",
+        "price": 123,
+        "discount": 0.36,
+        "created_at": "15.12.2024",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "хорор"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "так"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "..company"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "",
+            ""
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "user1",
+                "rating": 9,
+                "title": "Good game",
+                "text": "123wqe",
+                "recommend": true,
+                "created_at": "01.01.2025"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "link": "elden-ring",
+        "name": "Elden Ring",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Action RPG",
+        "price": 159,
+        "discount": 0.2,
+        "created_at": "25.02.2022",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, RPG"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "так"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5, xbox"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "FromSoftware"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, японська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "open world",
+            "soulslike"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "gamer22",
+                "rating": 10,
+                "title": "Шедевр",
+                "text": "Гра року! Атмосфера неймовірна.",
+                "recommend": true,
+                "created_at": "10.03.2022"
+            },
+            {
+                "author": "darkKnight",
+                "rating": 9,
+                "title": "Дуже круто",
+                "text": "Ідеальний баланс складності та дослідження світу.",
+                "recommend": true,
+                "created_at": "15.03.2022"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "link": "cyberpunk2077",
+        "name": "Cyberpunk 2077 (Phantom Liberty)",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Action, RPG",
+        "price": 179,
+        "discount": 0.5,
+        "created_at": "01.10.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, RPG"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5, xbox"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "CD Projekt Red"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, польська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "future",
+            "open world"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "max_dev",
+                "rating": 8,
+                "title": "Нарешті довели до розуму",
+                "text": "DLC зробило гру цікавішою, але все ще не шедевр.",
+                "recommend": true,
+                "created_at": "20.10.2023"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "link": "hogwarts-legacy",
+        "name": "Hogwarts Legacy",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Adventure, RPG",
+        "price": 149,
+        "discount": 0.3,
+        "created_at": "10.02.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "пригоди, RPG"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5, xbox"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Portkey Games"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "harry potter",
+            "magic"
+        ],
+        "hot_game": false,
+        "reviews": [
+            {
+                "author": "witchy_boi",
+                "rating": 9,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": true,
+                "created_at": "15.02.2023"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "link": "baldurs-gate-3",
+        "name": "Baldur's Gate III",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "RPG",
+        "price": 189,
+        "discount": 0.15,
+        "created_at": "03.08.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "RPG"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "так"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Larian Studios"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "dnd",
+            "fantasy"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "tabletopfan",
+                "rating": 10,
+                "title": "Справжній DnD",
+                "text": "Рольова гра в найкращому вигляді.",
+                "recommend": true,
+                "created_at": "05.08.2023"
+            },
+            {
+                "author": "rpglover",
+                "rating": 9,
+                "title": "Багато варіантів",
+                "text": "Кожне рішення впливає на гру, круто!",
+                "recommend": true,
+                "created_at": "08.08.2023"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "link": "the-last-of-us-part1",
+        "name": "The Last of Us Part I",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Action, Adventure",
+        "price": 179,
+        "discount": 0.25,
+        "created_at": "28.03.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, пригоди"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Naughty Dog"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "survival",
+            "zombie",
+            "story"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "created_at": "02.04.2023"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "link": "alan-wake-2",
+        "name": "Alan Wake II",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Horror, Thriller",
+        "price": 169,
+        "discount": 0.3,
+        "created_at": "27.10.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "горор, трилер"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "epic games"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Remedy Entertainment"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "horror",
+            "mystery"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "horrorFan_88",
+                "rating": 9,
+                "title": "Темна казка",
+                "text": "Атмосфера тримає в напрузі до кінця.",
+                "recommend": true,
+                "created_at": "30.10.2023"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "link": "starfield",
+        "name": "Starfield",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Sci-Fi RPG",
+        "price": 199,
+        "discount": 0.4,
+        "created_at": "06.09.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "фантастика, RPG"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, xbox"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Bethesda"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "space",
+            "exploration"
+        ],
+        "hot_game": false,
+        "reviews": [
+            {
+                "author": "astrogeek",
+                "rating": 8,
+                "title": "Масштабно, але трохи порожньо",
+                "text": "Космос гарний, але хочеться більше подій.",
+                "recommend": true,
+                "created_at": "15.09.2023"
+            },
+            {
+                "author": "bethesdafan",
+                "rating": 7,
+                "title": "Fallout у космосі",
+                "text": "Якщо любите Bethesda — вам зайде.",
+                "recommend": true,
+                "created_at": "17.09.2023"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "link": "hades-2",
+        "name": "Hades II",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Roguelike",
+        "price": 129,
+        "discount": 0.2,
+        "created_at": "14.05.2025",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "рогалик, екшн"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Supergiant Games"
+            },
+            {
+                "label": "мова",
+                "value": "англійська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "roguelike",
+            "indie",
+            "action"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "indiequeen",
+                "rating": 9,
+                "title": "Не гірше першої",
+                "text": "Динаміка і дизайн — топ.",
+                "recommend": true,
+                "created_at": "18.05.2025"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "link": "resident-evil-4-remake",
+        "name": "Resident Evil 4 Remake",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "Horror, Action",
+        "price": 159,
+        "discount": 0.35,
+        "created_at": "24.03.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "горор, екшн"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "ні"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "частково"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, ps5"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Capcom"
+            },
+            {
+                "label": "мова",
+                "value": "англійська, українська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "remake",
+            "zombie",
+            "survival"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "leonF",
+                "rating": 10,
+                "title": "Ідеальне переосмислення",
+                "text": "Все, що любив у старій грі, стало ще кращим.",
+                "recommend": true,
+                "created_at": "25.03.2023"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "link": "stalker-2",
+        "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": "FPS, Survival",
+        "price": 189,
+        "discount": 0.1,
+        "created_at": "02.12.2025",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "виживання, FPS"
+            },
+            {
+                "label": "мультиплеєр",
+                "value": "так"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "платформа",
+                "value": "steam, xbox"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "GSC Game World"
+            },
+            {
+                "label": "мова",
+                "value": "українська, англійська"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "чорнобиль",
+            "шутер",
+            "open world"
+        ],
+        "hot_game": true,
+        "reviews": [
+            {
+                "author": "zonewalker",
+                "rating": 9,
+                "title": "Зона повернулась",
+                "text": "Атмосфера та геймплей — саме те, чого чекали.",
+                "recommend": true,
+                "created_at": "03.12.2025"
+            },
+            {
+                "author": "realstalker",
+                "rating": 8,
+                "title": "Гарно, але ще є баги",
+                "text": "Дуже амбітно, чекаємо патчі.",
+                "recommend": true,
+                "created_at": "05.12.2025"
+            }
+        ]
+    }
+]
