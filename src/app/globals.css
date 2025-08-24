@@ -7,6 +7,8 @@
   --main: #07B6BF;
   --background: #f4f4f4;
   --separation: #dadada;
+  --red: #ff0000;
+  --lightgreen: #90ee90;
 }
 
 html,
@@ -33,12 +35,19 @@ a {
   text-decoration: none;
 }
 
-.container{
+.container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.btn{
+.btn {
   cursor: pointer;
+}
+
+.all-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
