@@ -1,0 +1,39 @@
+.menu {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        list-style: none;
+
+        li {
+            padding: 0 10px;
+            border-right: 1px solid var(--black);
+
+            &:last-child {
+                border-right: none;
+            }
+
+            a {
+                color: var(--black);
+                font-weight: 600;
+            }
+        }
+    }
+
+    &.alternative ul {
+        li {
+            border-right: 1px solid var(--white);
+
+            &:last-child {
+                border-right: none;
+            }
+
+            a {
+                color: var(--white);
+            }
+        }
+    }
+}

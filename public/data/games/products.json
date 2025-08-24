@@ -9,7 +9,6 @@
             "/data/games/images/elden-ring-2.webp",
             "/data/games/images/elden-ring-3.webp"
         ],
-
         "genre": "",
         "price": 123,
         "discount": 0.36,
@@ -270,8 +269,8 @@
     },
     {
         "id": 4,
-        "link": "baldurs-gate-3",
-        "name": "Baldur's Gate III",
+        "link": "baldurs-gate-II",
+        "name": "Baldur's Gate II",
         "prev_image": "/data/games/images/elden-ring-1.webp",
         "gallery": [
             "/data/games/images/elden-ring-1.webp",
@@ -547,8 +546,8 @@
     },
     {
         "id": 8,
-        "link": "hades-2",
-        "name": "Hades II",
+        "link": "hades-1",
+        "name": "Hades I",
         "prev_image": "/data/games/images/elden-ring-1.webp",
         "gallery": [
             "/data/games/images/elden-ring-1.webp",

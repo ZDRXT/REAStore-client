@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+
+    .logo-img {
+        height: 52px;
+        width: 52px;
+
+        &.alternative {
+            filter: invert(1);
+        }
+    }
+
+    .logo-text {
+        color: var(--main);
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
