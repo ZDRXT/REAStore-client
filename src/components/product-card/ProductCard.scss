@@ -1,7 +1,7 @@
 .ProductCard {
     border: 1px solid black;
     border-radius: 10px;
-    width: 300px;
+    width: 100%;
     height: fit-content;
     overflow: hidden;
 
@@ -127,8 +127,6 @@
 
 @media all and (max-width: 660px) {
     .ProductCard {
-        width: calc(50% - 5px);
-
         .ProductCard-image {
             height: 160px;
 
@@ -157,6 +155,15 @@
         }
 
         .ProductCard-content {
+            .title{
+                font-size: 16px;
+                width: 100%;
+            }
+
+            .in_stock {
+                font-size: 12px;
+            }
+
             .reviews {
                 font-size: 12px;
 

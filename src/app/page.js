@@ -1,4 +1,4 @@
-import HomePage from "@/pages/home-page/HomePage";
+import HomePage from "@/allPages/home-page/HomePage";
 import gameService from "@/services/games";
 
 export default async function Home() {

@@ -10,6 +10,25 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська",
+            "English"
+        ],
         "price": 123,
         "discount": 0.36,
         "created_at": "15.12.2024",
@@ -20,16 +39,8 @@
                 "value": "хорор"
             },
             {
-                "label": "мультиплеєр",
-                "value": "так"
-            },
-            {
                 "label": "падтримка VR",
                 "value": "ні"
-            },
-            {
-                "label": "платформа",
-                "value": "steam, ps5"
             },
             {
                 "label": "операційна система",
@@ -38,10 +49,6 @@
             {
                 "label": "автор",
                 "value": "..company"
-            },
-            {
-                "label": "мова",
-                "value": "англійська, українська"
             },
             {
                 "label": "регіон активації",
@@ -75,6 +82,12 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Action RPG",
+        "platforms": [
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 159,
         "discount": 0.2,
         "created_at": "25.02.2022",
@@ -148,6 +161,12 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Action, RPG",
+        "platforms": [
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            }
+        ],
         "price": 179,
         "discount": 0.5,
         "created_at": "01.10.2023",
@@ -213,6 +232,12 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Adventure, RPG",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            }
+        ],
         "price": 149,
         "discount": 0.3,
         "created_at": "10.02.2023",
@@ -278,6 +303,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "RPG",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 189,
         "discount": 0.15,
         "created_at": "03.08.2023",
@@ -351,6 +390,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Action, Adventure",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 179,
         "discount": 0.25,
         "created_at": "28.03.2023",
@@ -417,6 +470,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Horror, Thriller",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 169,
         "discount": 0.3,
         "created_at": "27.10.2023",
@@ -482,6 +549,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Sci-Fi RPG",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 199,
         "discount": 0.4,
         "created_at": "06.09.2023",
@@ -555,6 +636,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Roguelike",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 129,
         "discount": 0.2,
         "created_at": "14.05.2025",
@@ -621,6 +716,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "Horror, Action",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 159,
         "discount": 0.35,
         "created_at": "24.03.2023",
@@ -687,6 +796,20 @@
             "/data/games/images/elden-ring-3.webp"
         ],
         "genre": "FPS, Survival",
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
         "price": 189,
         "discount": 0.1,
         "created_at": "02.12.2025",
