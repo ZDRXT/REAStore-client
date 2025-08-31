@@ -1,8 +1,8 @@
 import HomePage from "@/allPages/home-page/HomePage";
-import gameService from "@/services/games";
+import serverGameService from "@/services/games.server";
 
 export default async function Home() {
-  const games = await gameService.getAllGames()
+  const games = serverGameService.getAllGames()
   
   return (
     <HomePage games={games}/>

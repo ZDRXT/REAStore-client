@@ -3,11 +3,11 @@
         "id": 11,
         "link": "gta5",
         "name": "GTA V",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/GTA_premium_online_edition_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/GTA_premium_online_edition_1.webp",
+            "/data/games/images/GTA_premium_online_edition_2.webp",
+            "/data/games/images/GTA_premium_online_edition_3.webp"
         ],
         "genre": "",
         "platforms": [
@@ -154,11 +154,11 @@
         "id": 2,
         "link": "cyberpunk2077",
         "name": "Cyberpunk 2077 (Phantom Liberty)",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/cyberpunk_2077_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/cyberpunk_2077_1.webp",
+            "/data/games/images/cyberpunk_2077_2.webp",
+            "/data/games/images/cyberpunk_2077_3.webp"
         ],
         "genre": "Action, RPG",
         "platforms": [
@@ -225,11 +225,11 @@
         "id": 3,
         "link": "hogwarts-legacy",
         "name": "Hogwarts Legacy",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/hogwarts_legacy_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/hogwarts_legacy_1.webp",
+            "/data/games/images/hogwarts_legacy_2.webp",
+            "/data/games/images/hogwarts_legacy_3.webp"
         ],
         "genre": "Adventure, RPG",
         "platforms": [
@@ -296,11 +296,11 @@
         "id": 4,
         "link": "baldurs-gate-II",
         "name": "Baldur's Gate II",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/baldurs-gate-II-1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/baldurs-gate-II-1.webp",
+            "/data/games/images/baldurs-gate-II-2.webp",
+            "/data/games/images/baldurs-gate-II-3.webp"
         ],
         "genre": "RPG",
         "platforms": [
@@ -383,11 +383,11 @@
         "id": 5,
         "link": "the-last-of-us-part1",
         "name": "The Last of Us Part I",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/the_last_of_us_p1_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/the_last_of_us_p1_1.webp",
+            "/data/games/images/the_last_of_us_p1_2.webp",
+            "/data/games/images/the_last_of_us_p1_3.webp"
         ],
         "genre": "Action, Adventure",
         "platforms": [
@@ -463,11 +463,11 @@
         "id": 6,
         "link": "alan-wake-2",
         "name": "Alan Wake II",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/alan_wake_2_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/alan_wake_2_1.webp",
+            "/data/games/images/alan_wake_2_2.webp",
+            "/data/games/images/alan_wake_2_3.webp"
         ],
         "genre": "Horror, Thriller",
         "platforms": [
@@ -542,11 +542,11 @@
         "id": 7,
         "link": "starfield",
         "name": "Starfield",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/starfield_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/starfield_1.webp",
+            "/data/games/images/starfield_2.webp",
+            "/data/games/images/starfield_3.webp"
         ],
         "genre": "Sci-Fi RPG",
         "platforms": [
@@ -629,11 +629,11 @@
         "id": 8,
         "link": "hades-1",
         "name": "Hades I",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/hades_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/hades_1.webp",
+            "/data/games/images/hades_2.webp",
+            "/data/games/images/hades_3.webp"
         ],
         "genre": "Roguelike",
         "platforms": [
@@ -709,11 +709,11 @@
         "id": 9,
         "link": "resident-evil-4-remake",
         "name": "Resident Evil 4 Remake",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/resident_evil_4_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/resident_evil_4_1.webp",
+            "/data/games/images/resident_evil_4_2.webp",
+            "/data/games/images/resident_evil_4_3.webp"
         ],
         "genre": "Horror, Action",
         "platforms": [
@@ -789,11 +789,11 @@
         "id": 10,
         "link": "stalker-2",
         "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
-        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "prev_image": "/data/games/images/stalker_2_1.webp",
         "gallery": [
-            "/data/games/images/elden-ring-1.webp",
-            "/data/games/images/elden-ring-2.webp",
-            "/data/games/images/elden-ring-3.webp"
+            "/data/games/images/stalker_2_1.webp",
+            "/data/games/images/stalker_2_2.webp",
+            "/data/games/images/stalker_2_3.webp"
         ],
         "genre": "FPS, Survival",
         "platforms": [
