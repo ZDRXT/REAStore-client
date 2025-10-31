@@ -1,0 +1,49 @@
+.allGames-content {
+    h1 {
+        font-size: 24px;
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    &__top{
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__filterbtn{
+        display: none;
+    }
+}
+
+@media all and (max-width: 1224px) {
+    .allGames-content {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 968px) {
+    .allGames-content {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 620px) {
+    .allGames-content {
+        &__filterbtn{
+            display: block;
+        }
+    }
+}

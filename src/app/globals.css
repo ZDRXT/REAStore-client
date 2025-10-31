@@ -2,13 +2,20 @@
   --white: #ffffff;
   --black: #000000;
   --grey: #777777;
-  --lightgrey: #b3b3b3;
+  --lightgrey: #e0e0e0;
   --darkgrey: #2b2b2b;
   --main: #07B6BF;
+  --mainborder: #099ba3;
   --background: #f4f4f4;
   --separation: #dadada;
   --red: #ff0000;
   --lightgreen: #90ee90;
+  --green: #00a619;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 155px;
 }
 
 html,
@@ -50,4 +57,25 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.divider{
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background: var(--grey);
+}
+
+@media all and (max-width: 1024px) {
+  html{
+    scroll-padding-top: 130px;
+  }
 }

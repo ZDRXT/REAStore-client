@@ -20,8 +20,6 @@ const Hero = ({ games }) => {
         if (!games) return
         const result = gameService.getRandomGames(games, 6)
         setRandomGames(result)
-
-        console.log(result)
     }, [games])
 
     if (randomGames.length === 0) return null

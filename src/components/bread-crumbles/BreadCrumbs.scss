@@ -1,0 +1,51 @@
+.breadCrumbs {
+    margin: 20px 0;
+    width: 100%;
+
+    .breadCrumbs-list {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        gap: 10px;
+
+        .breadCrumbs-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            white-space: nowrap;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        .breadCrumbs-item:first-child a {
+            text-decoration: none;
+        }
+
+        .breadCrumbs-item:last-child span {
+            display: block;
+            width: 360px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        figure {
+            margin-top: 3px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .breadCrumbs{
+        .breadCrumbs-list{
+            .breadCrumbs-item:last-child span {
+                width: 200px;
+            }
+        }
+    }
+}

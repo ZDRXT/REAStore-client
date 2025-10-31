@@ -14,45 +14,49 @@ class Games {
     }
 
     getGamesByFilter(allGames, filters) {
+        console.log(filters)
         return allGames.filter((game) => {
-            if (filters.platform) {
-                const hasPlatform = game.platforms.some(
-                    (p) => p.id.toLowerCase() === filters.platform.toLowerCase()
+            if (filters.platforms) {
+                const selectedPlatforms = filters.platforms.toLowerCase().split(",");
+                const gamePlatforms = game.platforms.map(p => p.id.toLowerCase());
+                
+                const hasAnyPlatform = selectedPlatforms.some(platform => 
+                    gamePlatforms.includes(platform)
                 );
-                if (!hasPlatform) return false;
+                
+                if (!hasAnyPlatform) return false;
+            }     
+
+            if ((filters.minPrice !== undefined && game.price < filters.minPrice) || (filters.maxPrice !== undefined && game.price > filters.maxPrice)) {
+                return false;
             }
 
-            if (filters.hotGames !== undefined) {
-                if (game.hot_game !== filters.hotGames) return false;
-            }
-
-            if (filters.price) {
-                if (
-                    (filters.price.from !== undefined &&
-                        game.price < filters.price.from) ||
-                    (filters.price.to !== undefined && game.price > filters.price.to)
-                ) {
+            if (filters.genres) {
+                const selectedGenres = filters.genres.split(",");
+                if (!game.genre || !selectedGenres.some(g => game.genre.includes(g))) {
                     return false;
                 }
             }
 
-            if (filters.genre) {
-                if (!game.genre || !game.genre.toLowerCase().includes(filters.genre.toLowerCase())) {
+            if (filters.languages) {
+                const selectedLanguages = filters.languages.split(",").map(lang => lang === "Ukrainian" ? "Українська" : lang)
+                if (!game.language || !selectedLanguages.some(g => game.language.includes(g))) {
                     return false;
                 }
             }
 
-            if (filters.multiplayer !== undefined) {
-                if (game.multiplayer !== filters.multiplayer) return false;
+            if (filters.other) {
+                let result = false
+            
+                if (filters.other.includes("available[true]")) result = result || game.available
+                if (filters.other.includes("available[false]")) result = result || !game.available
+                if (filters.other.includes("multiplayer[true]")) result = result || game.multiplayer
+                if (filters.other.includes("multiplayer[false]")) result = result || !game.multiplayer
+                if (filters.other.includes("hot_game")) result = result || game.hot_game
+            
+                return result
             }
-
-            if (filters.language && filters.language.length > 0) {
-                const hasLanguage = filters.language.some((lang) =>
-                    game.language?.includes(lang)
-                );
-                if (!hasLanguage) return false;
-            }
-
+            
             return true;
         });
     }

@@ -1,0 +1,70 @@
+.GameNavigation {
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+
+    .GameNavigation-list {
+        background: var(--white);
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        list-style: none;
+        overflow: hidden;
+        overflow-x: auto;
+        border-bottom: 1px solid var(--grey);
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -20px;
+            width: 100%;
+            height: 20px;
+            background: var(--background);
+        }
+
+        &__item {
+            position: relative;
+            
+            a{
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                padding: 14px;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                background: var(--lightgrey);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: var(--grey);
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .GameNavigation {
+        top: 60px;
+        
+        .GameNavigation-list{
+            border-radius: 0;
+        }
+
+        .container {
+            padding: 0;
+        }
+    }
+}

@@ -9,7 +9,7 @@
             "/data/games/images/GTA_premium_online_edition_2.webp",
             "/data/games/images/GTA_premium_online_edition_3.webp"
         ],
-        "genre": "",
+        "genre": ["Action RPG"],
         "platforms": [
             {
                 "id": "xbox",
@@ -18,10 +18,6 @@
             {
                 "id": "playstation",
                 "label": "PlayStation5"
-            },
-            {
-                "id": "steam",
-                "label": "Steam"
             }
         ],
         "multiplayer": true,
@@ -32,7 +28,7 @@
         "price": 123,
         "discount": 0.36,
         "created_at": "15.12.2024",
-        "available": true,
+        "available": false,
         "info": [
             {
                 "label": "жанр",
@@ -60,6 +56,7 @@
             ""
         ],
         "hot_game": true,
+        "description": "text",
         "reviews": [
             {
                 "author": "user1",
@@ -67,7 +64,7 @@
                 "title": "Good game",
                 "text": "123wqe",
                 "recommend": true,
-                "created_at": "01.01.2025"
+                "email": "1@1","created_at": "01.01.2025"
             }
         ]
     },
@@ -81,7 +78,9 @@
             "/data/games/images/elden-ring-2.webp",
             "/data/games/images/elden-ring-3.webp"
         ],
-        "genre": "Action RPG",
+        "genre": [
+            "Action RPG"
+        ],
         "platforms": [
             {
                 "id": "steam",
@@ -123,7 +122,8 @@
             "open world",
             "soulslike"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "gamer22",
@@ -131,7 +131,7 @@
                 "title": "Шедевр",
                 "text": "Гра року! Атмосфера неймовірна.",
                 "recommend": true,
-                "created_at": "10.03.2022"
+                "email": "1@1","created_at": "10.03.2022"
             },
             {
                 "author": "darkKnight",
@@ -139,7 +139,7 @@
                 "title": "Дуже круто",
                 "text": "Ідеальний баланс складності та дослідження світу.",
                 "recommend": true,
-                "created_at": "15.03.2022"
+                "email": "1@1","created_at": "15.03.2022"
             }
         ]
     },
@@ -153,7 +153,10 @@
             "/data/games/images/cyberpunk_2077_2.webp",
             "/data/games/images/cyberpunk_2077_3.webp"
         ],
-        "genre": "Action, RPG",
+        "genre": [
+            "Action",
+            "RPG"
+        ],
         "platforms": [
             {
                 "id": "playstation",
@@ -195,7 +198,8 @@
             "future",
             "open world"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "max_dev",
@@ -203,7 +207,7 @@
                 "title": "Нарешті довели до розуму",
                 "text": "DLC зробило гру цікавішою, але все ще не шедевр.",
                 "recommend": true,
-                "created_at": "20.10.2023"
+                "email": "1@1","created_at": "20.10.2023"
             }
         ]
     },
@@ -217,7 +221,10 @@
             "/data/games/images/hogwarts_legacy_2.webp",
             "/data/games/images/hogwarts_legacy_3.webp"
         ],
-        "genre": "Adventure, RPG",
+        "genre": [
+            "Adventure",
+            "RPG"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -259,6 +266,7 @@
             "magic"
         ],
         "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "witchy_boi",
@@ -266,7 +274,7 @@
                 "title": "Найкраща гра по Гаррі Поттеру",
                 "text": "Світ дуже детальний, фанати будуть у захваті.",
                 "recommend": true,
-                "created_at": "15.02.2023"
+                "email": "1@1","created_at": "15.02.2023"
             }
         ]
     },
@@ -280,7 +288,9 @@
             "/data/games/images/baldurs-gate-II-2.webp",
             "/data/games/images/baldurs-gate-II-3.webp"
         ],
-        "genre": "RPG",
+        "genre": [
+            "RPG"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -330,6 +340,7 @@
             "fantasy"
         ],
         "hot_game": true,
+        "description": "text",
         "reviews": [
             {
                 "author": "tabletopfan",
@@ -337,7 +348,7 @@
                 "title": "Справжній DnD",
                 "text": "Рольова гра в найкращому вигляді.",
                 "recommend": true,
-                "created_at": "05.08.2023"
+                "email": "1@1","created_at": "05.08.2023"
             },
             {
                 "author": "rpglover",
@@ -345,7 +356,7 @@
                 "title": "Багато варіантів",
                 "text": "Кожне рішення впливає на гру, круто!",
                 "recommend": true,
-                "created_at": "08.08.2023"
+                "email": "1@1","created_at": "08.08.2023"
             }
         ]
     },
@@ -359,7 +370,10 @@
             "/data/games/images/the_last_of_us_p1_2.webp",
             "/data/games/images/the_last_of_us_p1_3.webp"
         ],
-        "genre": "Action, Adventure",
+        "genre": [
+            "Action",
+            "Adventure"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -409,7 +423,8 @@
             "zombie",
             "story"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In iste minus adipisci ipsa voluptate laborum rerum, repudiandae incidunt magnam quod asperiores? Quo in, hic similique tempore iste repellat ea. Repudiandae incidunt minus fuga nemo error dolores fugiat, ipsum quidem asperiores? Ad aliquid harum pariatur nulla. Tempore, animi natus adipisci laborum vero qui facere dignissimos hic iste repudiandae illo vitae accusantium neque. Et tenetur eligendi recusandae debitis aliquid repellat dicta cum expedita aut error sapiente officiis a, quas dolorum rem sint ipsam aspernatur repellendus molestiae, libero nisi nobis deleniti praesentium? Rem laborum quas error praesentium asperiores! Eaque at distinctio eos officia officiis placeat, ad fugit amet quos mollitia soluta? Obcaecati maiores fugiat architecto nostrum velit facere consequatur fugit atque neque incidunt maxime repellendus sunt repudiandae modi vero tenetur quam aliquid soluta nihil libero deserunt beatae, similique alias iste! Eveniet in suscipit fugit natus enim omnis nihil, aspernatur veritatis vitae, non animi unde error odio, vero ea similique nemo quaerat. Fuga cumque expedita maxime dicta, officiis a distinctio consequatur, sunt et harum eum minus nemo dignissimos rem, repellendus voluptate voluptas debitis aperiam quas. Iste rerum cupiditate harum tenetur commodi, odit quisquam illo asperiores atque! Ad, a minima earum itaque ut hic illum amet maxime quod quibusdam id, natus culpa nesciunt maiores? Qui atque asperiores praesentium dolore sapiente. Veniam voluptates amet ab reiciendis soluta itaque nobis, sunt omnis! Aliquid, temporibus. Itaque, commodi eaque! In, provident quasi consequuntur laboriosam quos sequi officiis libero repellat nisi, inventore eaque? Optio mollitia labore sit tenetur ducimus earum modi voluptatibus, cumque ratione neque, facilis fuga similique tempore tempora ipsa! In quidem nobis eveniet? Sunt laboriosam inventore, voluptatibus nostrum molestias quisquam cum a eligendi officia pariatur. Eveniet repellendus incidunt nihil facere sed rerum ullam animi reprehenderit fugiat. Repudiandae nobis dolor dolorum soluta reiciendis? Unde recusandae debitis natus hic sunt.",
         "reviews": [
             {
                 "author": "joel4life",
@@ -417,7 +432,95 @@
                 "title": "Сюжет на мільйон",
                 "text": "Це не гра — це фільм із геймплеєм.",
                 "recommend": true,
-                "created_at": "02.04.2023"
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
             }
         ]
     },
@@ -431,7 +534,10 @@
             "/data/games/images/alan_wake_2_2.webp",
             "/data/games/images/alan_wake_2_3.webp"
         ],
-        "genre": "Horror, Thriller",
+        "genre": [
+            "Horror",
+            "Thriller"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -480,7 +586,8 @@
             "horror",
             "mystery"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "horrorFan_88",
@@ -488,7 +595,7 @@
                 "title": "Темна казка",
                 "text": "Атмосфера тримає в напрузі до кінця.",
                 "recommend": true,
-                "created_at": "30.10.2023"
+                "email": "1@1","created_at": "30.10.2023"
             }
         ]
     },
@@ -502,7 +609,9 @@
             "/data/games/images/starfield_2.webp",
             "/data/games/images/starfield_3.webp"
         ],
-        "genre": "Sci-Fi RPG",
+        "genre": [
+            "Sci-Fi RPG"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -552,6 +661,7 @@
             "exploration"
         ],
         "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "astrogeek",
@@ -559,7 +669,7 @@
                 "title": "Масштабно, але трохи порожньо",
                 "text": "Космос гарний, але хочеться більше подій.",
                 "recommend": true,
-                "created_at": "15.09.2023"
+                "email": "1@1","created_at": "15.09.2023"
             },
             {
                 "author": "bethesdafan",
@@ -567,7 +677,7 @@
                 "title": "Fallout у космосі",
                 "text": "Якщо любите Bethesda — вам зайде.",
                 "recommend": true,
-                "created_at": "17.09.2023"
+                "email": "1@1","created_at": "17.09.2023"
             }
         ]
     },
@@ -581,7 +691,9 @@
             "/data/games/images/hades_2.webp",
             "/data/games/images/hades_3.webp"
         ],
-        "genre": "Roguelike",
+        "genre": [
+            "Roguelike"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -631,7 +743,8 @@
             "indie",
             "action"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "indiequeen",
@@ -639,7 +752,7 @@
                 "title": "Не гірше першої",
                 "text": "Динаміка і дизайн — топ.",
                 "recommend": true,
-                "created_at": "18.05.2025"
+                "email": "1@1","created_at": "18.05.2025"
             }
         ]
     },
@@ -653,7 +766,10 @@
             "/data/games/images/resident_evil_4_2.webp",
             "/data/games/images/resident_evil_4_3.webp"
         ],
-        "genre": "Horror, Action",
+        "genre": [
+            "Horror",
+            "Action"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -704,7 +820,8 @@
             "zombie",
             "survival"
         ],
-        "hot_game": true,
+        "hot_game": false,
+        "description": "text",
         "reviews": [
             {
                 "author": "leonF",
@@ -712,7 +829,7 @@
                 "title": "Ідеальне переосмислення",
                 "text": "Все, що любив у старій грі, стало ще кращим.",
                 "recommend": true,
-                "created_at": "25.03.2023"
+                "email": "1@1","created_at": "25.03.2023"
             }
         ]
     },
@@ -726,7 +843,10 @@
             "/data/games/images/stalker_2_2.webp",
             "/data/games/images/stalker_2_3.webp"
         ],
-        "genre": "FPS, Survival",
+        "genre": [
+            "FPS",
+            "Survival"
+        ],
         "platforms": [
             {
                 "id": "xbox",
@@ -778,6 +898,7 @@
             "open world"
         ],
         "hot_game": true,
+        "description": "text",
         "reviews": [
             {
                 "author": "zonewalker",
@@ -785,7 +906,7 @@
                 "title": "Зона повернулась",
                 "text": "Атмосфера та геймплей — саме те, чого чекали.",
                 "recommend": true,
-                "created_at": "03.12.2025"
+                "email": "1@1","created_at": "03.12.2025"
             },
             {
                 "author": "realstalker",
@@ -793,7 +914,7 @@
                 "title": "Гарно, але ще є баги",
                 "text": "Дуже амбітно, чекаємо патчі.",
                 "recommend": true,
-                "created_at": "05.12.2025"
+                "email": "1@1","created_at": "05.12.2025"
             }
         ]
     }

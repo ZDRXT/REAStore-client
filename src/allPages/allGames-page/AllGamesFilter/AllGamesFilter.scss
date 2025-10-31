@@ -1,0 +1,102 @@
+.AllGamesFilter {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h2{
+        margin-bottom: 0;
+        font-style: 24px;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    &__top{
+        align-items: center;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__closebtn{
+        display: none;
+    }
+
+    &-price {
+        padding: 15px;
+        border-radius: 10px;
+        background: var(--white);
+        
+        &__content {
+            padding: 0 16px;
+            margin-bottom: 20px;
+        }
+
+        .css-ordaro-MuiSlider-valueLabel::before{
+            top: -8px;
+        }
+    }
+    
+    &-checkboxes {
+        padding: 15px;
+        border-radius: 10px;
+        background: var(--white);
+        
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+    
+    &-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        label{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        span {
+            display: block;
+            background-color: var(--main);
+            border-radius: 8px;
+            width: 24px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 620px) {
+    .AllGamesFilter {
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        z-index: 100;
+        padding: 15px;
+        margin: 0;
+        background: var(--background);
+        transition: all 0.3s;
+
+        &.open{
+            left: 0;
+        }
+
+        &__closebtn{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.GameCharacteristics{
+    margin: 20px 0;
+
+    &-wrapper{
+        padding: 14px;
+        background: var(--white);
+        border-radius: 10px;
+
+        h2{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        table{
+            width: 100%;
+            table-layout: fixed;
+
+            tr:nth-child(2n) {
+                background: var(--lightgrey);
+            }
+
+            td{
+                padding: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &-wrapper{
+            padding: 6px;
+        }
+    }
+}

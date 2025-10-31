@@ -1,0 +1,16 @@
+.AllGamesPage{
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 30px;
+    }
+}
+
+@media all and (max-width: 620px) {
+    .AllGamesPage{
+        &-wrapper {
+            grid-template-columns: 1fr;
+            gap: 0px;
+        }
+    }
+}
