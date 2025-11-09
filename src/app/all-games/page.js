@@ -7,7 +7,7 @@ export default async function AllGames({ searchParams }) {
   const allGames = await serverGameService.getAllGames()
   const params = await searchParams
   const filteredGames = gameService.getGamesByFilter(allGames, params)
-  const availableFilters = serverGameService.getAvailabeFilters()
+  const availableFilters = await serverGameService.getAvailabeFilters()
 
   return (
     < AllGamesPage availableFilters={availableFilters} filteredGames={filteredGames} filterParams={params} />

@@ -2,6 +2,8 @@ import "./Footer.scss"
 
 import Logo from "../logo/Logo"
 
+import Menu from "../menu/Menu"
+
 const Footer = () => {
     return (
         <footer className="Footer">
@@ -16,15 +18,22 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-part">
-                            <div className="footer-nav-title"></div>
+                            <div className="footer-nav__title">Навігація сайту</div>
+
+                            <Menu alternative={true}/>
                         </div>
 
                         <div className="footer-part">
-
+                            <div className="footer-nav__title">Години роботи</div>
+                            <nav>
+                                <ul>
+                                    <li><span>Пн - Пт:</span> 8:00</li>
+                                </ul>
+                            </nav>
                         </div>
 
                         <div className="footer-part">
-
+                            
                         </div>
                     </div>
 

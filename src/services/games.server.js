@@ -1,26 +1,24 @@
-import fs from 'fs'
-import path from 'path'
+import { siteURL } from "@/constants/config"
 
 class ServerGames {
     constructor() {
-        this.url = ['data', 'products.json']
-      }
-      
-      getAllGames() {
-        try {
-          const filePath = path.join(process.cwd(), ...this.url)
-          console.log(filePath)
-          const fileContents = fs.readFileSync(filePath, 'utf8')
-          return JSON.parse(fileContents)
-        } catch (error) {
-          throw error
-        }
-      }
-      
+        this.url = siteURL + "/data/games/products.json"
+    }
 
-    getGame(link) {
+    async getAllGames() {
         try {
-            const allGames = this.getAllGames()
+            const res = await fetch(this.url)
+            const data = await res.json()
+
+            return data
+        } catch (error) {
+            throw error
+        }
+    }
+
+    async getGame(link) {
+        try {
+            const allGames = await this.getAllGames()
 
             const game = allGames.find(element => element.link === link)
 
@@ -32,24 +30,24 @@ class ServerGames {
         }
     }
 
-    getAvailabeFilters() {
+    async getAvailabeFilters() {
         try {
-            const prices = this.getAvailabePrices()
-            const genres = this.getAvailabeGenres()
-            const platforms = this.getAvailabePlatforms()
-            const languages = this.getAvailableLanguages()
-            const other = this.getOtherFilters()
+            const allGames = await this.getAllGames()
 
-            return {prices, genres, platforms, languages, other}
+            const prices = this.getAvailabePrices(allGames)
+            const genres = this.getAvailabeGenres(allGames)
+            const platforms = this.getAvailabePlatforms(allGames)
+            const languages = this.getAvailableLanguages(allGames)
+            const other = this.getOtherFilters(allGames)
+
+            return { prices, genres, platforms, languages, other }
         } catch (error) {
             throw error
         }
     }
 
-    getAvailabeGenres() {
+    getAvailabeGenres(allGames) {
         try {
-            const allGames = this.getAllGames()
-
             return Object.entries(allGames.flatMap(game => game.genre).reduce((acc, genre) => {
                 acc[genre] = (acc[genre] || 0) + 1
                 return acc
@@ -59,10 +57,8 @@ class ServerGames {
         }
     }
 
-    getAvailabePrices() {
+    getAvailabePrices(allGames) {
         try {
-            const allGames = this.getAllGames()
-
             const allPrices = allGames.map(game => game.price)
 
             return [Math.min(...allPrices), Math.max(...allPrices)]
@@ -71,10 +67,8 @@ class ServerGames {
         }
     }
 
-    getAvailabePlatforms() {
+    getAvailabePlatforms(allGames) {
         try {
-            const allGames = this.getAllGames()
-
             return Object.values(allGames.flatMap(game => game.platforms)
                 .reduce((acc, platform) => {
                     if (!acc[platform.id]) {
@@ -88,10 +82,8 @@ class ServerGames {
         }
     }
 
-    getAvailableLanguages() {
+    getAvailableLanguages(allGames) {
         try {
-            const allGames = this.getAllGames()
-
             return Object.entries(allGames.flatMap(game => game.language).reduce((acc, language) => {
                 acc[language] = (acc[language] || 0) + 1
                 return acc
@@ -101,10 +93,8 @@ class ServerGames {
         }
     }
 
-    getOtherFilters() {
+    getOtherFilters(allGames) {
         try {
-            const allGames = this.getAllGames()
-
             const avTrueLength = allGames.filter(game => game.available).length
             const avFalseLength = allGames.filter(game => !game.available).length
 

@@ -1,5 +1,4 @@
 .menu {
-
     ul {
         display: flex;
         flex-direction: row;
@@ -24,16 +23,14 @@
     }
 
     &.alternative ul {
+        flex-direction: column;
+
         li {
-            border-right: 1px solid var(--white);
+            border: none;
 
-            &:last-child {
-                border-right: none;
-            }
-
-            a {
-                color: var(--white);
-            }
+            // a {
+            //     color: var(--white);
+            // }
         }
     }
 }
