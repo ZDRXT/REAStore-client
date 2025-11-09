@@ -12,11 +12,11 @@ const Footer = () => {
                             <div className="footer__logo">
                                 <Logo />
                             </div>
-                            <p></p>
+                            <p>Магазин офіціальних ігор: REAStore</p>
                         </div>
 
                         <div className="footer-part">
-
+                            <div className="footer-nav-title"></div>
                         </div>
 
                         <div className="footer-part">
