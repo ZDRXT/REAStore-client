@@ -3,18 +3,19 @@ import path from 'path'
 
 class ServerGames {
     constructor() {
-        this.url = 'public/data/games/products.json'
-    }
-
-    getAllGames() {
+        this.url = ['public', 'data', 'games', 'products.json']
+      }
+      
+      getAllGames() {
         try {
-            const filePath = path.join(process.cwd(), this.url)
-            const fileContents = fs.readFileSync(filePath, 'utf8')
-            return JSON.parse(fileContents)
+          const filePath = path.join(process.cwd(), ...this.url)
+          const fileContents = fs.readFileSync(filePath, 'utf8')
+          return JSON.parse(fileContents)
         } catch (error) {
-            throw error
+          throw error
         }
-    }
+      }
+      
 
     getGame(link) {
         try {
