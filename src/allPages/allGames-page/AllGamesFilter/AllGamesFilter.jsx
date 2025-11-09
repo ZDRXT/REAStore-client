@@ -4,10 +4,13 @@ import "./AllGamesFilter.scss"
 
 import { Slider } from "@mui/material"
 
+
+import { CircleX } from "lucide-react"
+
 import { useState, useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 
-const AllGamesFilter = ({ availableFilters,  handleCloseFilter, isOppennedFilter}) => {
+const AllGamesFilter = ({ availableFilters, handleCloseFilter, isOppennedFilter }) => {
     const [priceRange, setPriceRange] = useState(availableFilters.prices)
 
     const [genres, setGenres] = useState([])
@@ -87,56 +90,65 @@ const AllGamesFilter = ({ availableFilters,  handleCloseFilter, isOppennedFilter
             params.set("other", others.join(","))
         }
 
-        console.log(params.toString())
         return params.toString()
     }
 
+    const applyFilters = () => {
+        const query = createFilterString()
+    
+        const url = query ? `all-games?${query}` : "all-games"
+    
+        router.push(url)
+
+        if (isOppennedFilter) handleCloseFilter()
+    }
+    
     useEffect(() => {
-        const timer = setTimeout(() => {
-            const query = createFilterString()
-
-            const url = query ? `all-games?${query}` : "all-games"
-
-            router.push(url)
-        }, 300)
-
+        if (isOppennedFilter) return
+        
+        const timer = setTimeout(applyFilters, 300)
+    
         return () => clearTimeout(timer)
     }, [router, searchParams, priceRange, genres, platforms, languages, others])
 
     return (
-        <section className={`AllGamesFilter ${isOppennedFilter?"open" : ""}`}>
+        <section className={`AllGamesFilter ${isOppennedFilter ? "open" : ""}`}>
             <div className="AllGamesFilter__top">
                 <h2>Фільтр товарів</h2>
 
-                <button className="AllGamesFilter__closebtn" onClick={handleCloseFilter}>X</button>
+                <button className="AllGamesFilter__closebtn" onClick={handleCloseFilter}><CircleX /></button>
             </div>
             <div className="AllGamesFilter-content">
 
                 <div className="AllGamesFilter-price">
                     <h3>Ціна:</h3>
                     <div className="AllGamesFilter-price__content">
-                        <div >
-                            {priceRange[0]}
-                            {priceRange[1]}
+                        <div className="AllGamesFilter-price__label">
+                            <span>Від: {priceRange[0]} ₴</span>
+
+                            <span>До: {priceRange[1]} ₴</span>
                         </div>
-                        <Slider
-                            getAriaLabel={() => 'Temperature range'}
-                            value={priceRange}
-                            onChange={handlePriceRange}
-                            valueLabelDisplay="on"
-                            valueLabelFormat={(value) => `${value} ₴`}
-                            min={availableFilters.prices[0]}
-                            max={availableFilters.prices[1]}
-                            slotProps={{
-                                valueLabel: {
-                                    sx: {
-                                        top: 'initial',
-                                        bottom: '-60px',
-                                        transformOrigin: 'top center',
+
+                        <div className="AllGamesFilter-price__slider">
+                            <Slider
+                                getAriaLabel={() => 'Temperature range'}
+                                value={priceRange}
+                                onChange={handlePriceRange}
+                                valueLabelDisplay="on"
+                                valueLabelFormat={(value) => `${value} ₴`}
+                                min={availableFilters.prices[0]}
+                                max={availableFilters.prices[1]}
+                                slotProps={{
+                                    valueLabel: {
+                                        sx: {
+                                            top: 'initial',
+                                            bottom: '-60px',
+                                            transformOrigin: 'top center',
+                                        },
                                     },
-                                },
-                            }}
-                        />
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -195,9 +207,11 @@ const AllGamesFilter = ({ availableFilters,  handleCloseFilter, isOppennedFilter
                         })}
                     </div>
                 </div>
-
             </div>
 
+            <div className="AllGamesFilter__submitBtn" onClick={applyFilters}>
+                Застосувати
+            </div>
         </section>
     )
 }

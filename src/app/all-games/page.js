@@ -10,7 +10,6 @@ export default async function AllGames({ searchParams }) {
   const availableFilters = serverGameService.getAvailabeFilters()
 
   return (
-    < AllGamesPage availableFilters={availableFilters} filteredGames={filteredGames} />
-
+    < AllGamesPage availableFilters={availableFilters} filteredGames={filteredGames} filterParams={params} />
   );
 }

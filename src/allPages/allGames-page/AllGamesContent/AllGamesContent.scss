@@ -1,6 +1,11 @@
 .allGames-content {
     h1 {
         font-size: 24px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     &__list {
@@ -19,6 +24,13 @@
 
     &__filterbtn{
         display: none;
+        background: none;
+        border-color: var(--main);
+        border-radius: 8px;
+        font-size: 14px;
+        align-items: center;
+        padding: 4px;
+        gap: 4px;
     }
 }
 
@@ -42,8 +54,14 @@
 
 @media all and (max-width: 620px) {
     .allGames-content {
+        margin: 20px 0;
+
+        h1 {
+            font-size: 20px;
+        }
+
         &__filterbtn{
-            display: block;
+            display: flex;
         }
     }
 }

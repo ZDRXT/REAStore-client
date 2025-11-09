@@ -7,7 +7,7 @@ import AllGamesContent from "./AllGamesContent/AllGamesContent"
 
 import { useState } from "react"
 
-const AllGamesPage = ({availableFilters, filteredGames}) => {
+const AllGamesPage = ({availableFilters, filteredGames, filterParams}) => {
     const [isOppennedFilter, setIsOppennedFilter] = useState(false)
 
     const handleOpenFilter = () => {
@@ -22,8 +22,8 @@ const AllGamesPage = ({availableFilters, filteredGames}) => {
         <main className="AllGamesPage">
             <div className="container">
                 <div className="AllGamesPage-wrapper">
-                    <AllGamesFilter availableFilters={availableFilters} isOppennedFilter={isOppennedFilter} handleCloseFilter={handleCloseFilter}/>
-                    <AllGamesContent filteredGames={filteredGames} isOppennedFilter={isOppennedFilter} handleOpenFilter={handleOpenFilter}/>
+                    <AllGamesFilter availableFilters={availableFilters} isOppennedFilter={isOppennedFilter} handleCloseFilter={handleCloseFilter} />
+                    <AllGamesContent filteredGames={filteredGames} isOppennedFilter={isOppennedFilter} handleOpenFilter={handleOpenFilter} filterParams={filterParams} />
                 </div>
             </div>
         </main>

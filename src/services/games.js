@@ -14,7 +14,6 @@ class Games {
     }
 
     getGamesByFilter(allGames, filters) {
-        console.log(filters)
         return allGames.filter((game) => {
             if (filters.platforms) {
                 const selectedPlatforms = filters.platforms.toLowerCase().split(",");

@@ -12,7 +12,6 @@ class ServerGames {
             const fileContents = fs.readFileSync(filePath, 'utf8')
             return JSON.parse(fileContents)
         } catch (error) {
-            console.error('Error reading games file:', error)
             throw error
         }
     }
