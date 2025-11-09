@@ -6,10 +6,10 @@ import AllGamesPage from "@/allPages/allGames-page/AllGamesPage";
 export default async function AllGames({ searchParams }) {
   const allGames = await serverGameService.getAllGames()
   const params = await searchParams
-  const filteredGames = gameService.getGamesByFilter(allGames, params)
+  // const filteredGames = gameService.getGamesByFilter(allGames, params)
   const availableFilters = serverGameService.getAvailabeFilters()
 
   return (
-    < AllGamesPage availableFilters={availableFilters} filteredGames={filteredGames} filterParams={params} />
+    < AllGamesPage availableFilters={availableFilters} filteredGames={allGames} filterParams={params} />
   );
 }

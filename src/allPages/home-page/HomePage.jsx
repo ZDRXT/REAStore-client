@@ -1,7 +1,6 @@
 "use client"
 
 import Hero from "./hero/Hero"
-import ProductCard from "@/components/product-card/ProductCard"
 import FilteredGames from "./filtered-games/FilteredGames"
 
 const HomePage = ({ games }) => {
