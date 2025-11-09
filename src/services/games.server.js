@@ -9,6 +9,7 @@ class ServerGames {
       getAllGames() {
         try {
           const filePath = path.join(process.cwd(), ...this.url)
+          console.log(filePath)
           const fileContents = fs.readFileSync(filePath, 'utf8')
           return JSON.parse(fileContents)
         } catch (error) {
