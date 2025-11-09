@@ -1,0 +1,921 @@
+[
+    {
+        "id": 11,
+        "link": "gta5",
+        "name": "GTA V",
+        "prev_image": "/data/games/images/GTA_premium_online_edition_1.webp",
+        "gallery": [
+            "/data/games/images/GTA_premium_online_edition_1.webp",
+            "/data/games/images/GTA_premium_online_edition_2.webp",
+            "/data/games/images/GTA_premium_online_edition_3.webp"
+        ],
+        "genre": ["Action RPG"],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська",
+            "English"
+        ],
+        "price": 123,
+        "discount": 0.36,
+        "created_at": "15.12.2024",
+        "available": false,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "хорор"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "..company"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "",
+            ""
+        ],
+        "hot_game": true,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "user1",
+                "rating": 9,
+                "title": "Good game",
+                "text": "123wqe",
+                "recommend": true,
+                "email": "1@1","created_at": "01.01.2025"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "link": "elden-ring",
+        "name": "Elden Ring",
+        "prev_image": "/data/games/images/elden-ring-1.webp",
+        "gallery": [
+            "/data/games/images/elden-ring-1.webp",
+            "/data/games/images/elden-ring-2.webp",
+            "/data/games/images/elden-ring-3.webp"
+        ],
+        "genre": [
+            "Action RPG"
+        ],
+        "platforms": [
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська",
+            "English"
+        ],
+        "price": 159,
+        "discount": 0.2,
+        "created_at": "25.02.2022",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, RPG"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "FromSoftware"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "open world",
+            "soulslike"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "gamer22",
+                "rating": 10,
+                "title": "Шедевр",
+                "text": "Гра року! Атмосфера неймовірна.",
+                "recommend": true,
+                "email": "1@1","created_at": "10.03.2022"
+            },
+            {
+                "author": "darkKnight",
+                "rating": 9,
+                "title": "Дуже круто",
+                "text": "Ідеальний баланс складності та дослідження світу.",
+                "recommend": true,
+                "email": "1@1","created_at": "15.03.2022"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "link": "cyberpunk2077",
+        "name": "Cyberpunk 2077 (Phantom Liberty)",
+        "prev_image": "/data/games/images/cyberpunk_2077_1.webp",
+        "gallery": [
+            "/data/games/images/cyberpunk_2077_1.webp",
+            "/data/games/images/cyberpunk_2077_2.webp",
+            "/data/games/images/cyberpunk_2077_3.webp"
+        ],
+        "genre": [
+            "Action",
+            "RPG"
+        ],
+        "platforms": [
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська",
+            "English"
+        ],
+        "price": 179,
+        "discount": 0.5,
+        "created_at": "01.10.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, RPG"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "CD Projekt Red"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "future",
+            "open world"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "max_dev",
+                "rating": 8,
+                "title": "Нарешті довели до розуму",
+                "text": "DLC зробило гру цікавішою, але все ще не шедевр.",
+                "recommend": true,
+                "email": "1@1","created_at": "20.10.2023"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "link": "hogwarts-legacy",
+        "name": "Hogwarts Legacy",
+        "prev_image": "/data/games/images/hogwarts_legacy_1.webp",
+        "gallery": [
+            "/data/games/images/hogwarts_legacy_1.webp",
+            "/data/games/images/hogwarts_legacy_2.webp",
+            "/data/games/images/hogwarts_legacy_3.webp"
+        ],
+        "genre": [
+            "Adventure",
+            "RPG"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "English"
+        ],
+        "price": 149,
+        "discount": 0.3,
+        "created_at": "10.02.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "пригоди, RPG"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Portkey Games"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "harry potter",
+            "magic"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "witchy_boi",
+                "rating": 9,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": true,
+                "email": "1@1","created_at": "15.02.2023"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "link": "baldurs-gate-II",
+        "name": "Baldur's Gate II",
+        "prev_image": "/data/games/images/baldurs-gate-II-1.webp",
+        "gallery": [
+            "/data/games/images/baldurs-gate-II-1.webp",
+            "/data/games/images/baldurs-gate-II-2.webp",
+            "/data/games/images/baldurs-gate-II-3.webp"
+        ],
+        "genre": [
+            "RPG"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "English"
+        ],
+        "price": 189,
+        "discount": 0.15,
+        "created_at": "03.08.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "RPG"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Larian Studios"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "dnd",
+            "fantasy"
+        ],
+        "hot_game": true,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "tabletopfan",
+                "rating": 10,
+                "title": "Справжній DnD",
+                "text": "Рольова гра в найкращому вигляді.",
+                "recommend": true,
+                "email": "1@1","created_at": "05.08.2023"
+            },
+            {
+                "author": "rpglover",
+                "rating": 9,
+                "title": "Багато варіантів",
+                "text": "Кожне рішення впливає на гру, круто!",
+                "recommend": true,
+                "email": "1@1","created_at": "08.08.2023"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "link": "the-last-of-us-part1",
+        "name": "The Last of Us Part I",
+        "prev_image": "/data/games/images/the_last_of_us_p1_1.webp",
+        "gallery": [
+            "/data/games/images/the_last_of_us_p1_1.webp",
+            "/data/games/images/the_last_of_us_p1_2.webp",
+            "/data/games/images/the_last_of_us_p1_3.webp"
+        ],
+        "genre": [
+            "Action",
+            "Adventure"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська"
+        ],
+        "price": 179,
+        "discount": 0.25,
+        "created_at": "28.03.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "екшн, пригоди"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Naughty Dog"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "survival",
+            "zombie",
+            "story"
+        ],
+        "hot_game": false,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. In iste minus adipisci ipsa voluptate laborum rerum, repudiandae incidunt magnam quod asperiores? Quo in, hic similique tempore iste repellat ea. Repudiandae incidunt minus fuga nemo error dolores fugiat, ipsum quidem asperiores? Ad aliquid harum pariatur nulla. Tempore, animi natus adipisci laborum vero qui facere dignissimos hic iste repudiandae illo vitae accusantium neque. Et tenetur eligendi recusandae debitis aliquid repellat dicta cum expedita aut error sapiente officiis a, quas dolorum rem sint ipsam aspernatur repellendus molestiae, libero nisi nobis deleniti praesentium? Rem laborum quas error praesentium asperiores! Eaque at distinctio eos officia officiis placeat, ad fugit amet quos mollitia soluta? Obcaecati maiores fugiat architecto nostrum velit facere consequatur fugit atque neque incidunt maxime repellendus sunt repudiandae modi vero tenetur quam aliquid soluta nihil libero deserunt beatae, similique alias iste! Eveniet in suscipit fugit natus enim omnis nihil, aspernatur veritatis vitae, non animi unde error odio, vero ea similique nemo quaerat. Fuga cumque expedita maxime dicta, officiis a distinctio consequatur, sunt et harum eum minus nemo dignissimos rem, repellendus voluptate voluptas debitis aperiam quas. Iste rerum cupiditate harum tenetur commodi, odit quisquam illo asperiores atque! Ad, a minima earum itaque ut hic illum amet maxime quod quibusdam id, natus culpa nesciunt maiores? Qui atque asperiores praesentium dolore sapiente. Veniam voluptates amet ab reiciendis soluta itaque nobis, sunt omnis! Aliquid, temporibus. Itaque, commodi eaque! In, provident quasi consequuntur laboriosam quos sequi officiis libero repellat nisi, inventore eaque? Optio mollitia labore sit tenetur ducimus earum modi voluptatibus, cumque ratione neque, facilis fuga similique tempore tempora ipsa! In quidem nobis eveniet? Sunt laboriosam inventore, voluptatibus nostrum molestias quisquam cum a eligendi officia pariatur. Eveniet repellendus incidunt nihil facere sed rerum ullam animi reprehenderit fugiat. Repudiandae nobis dolor dolorum soluta reiciendis? Unde recusandae debitis natus hic sunt.",
+        "reviews": [
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            },
+            {
+                "author": "joel4life",
+                "rating": 10,
+                "title": "Сюжет на мільйон",
+                "text": "Це не гра — це фільм із геймплеєм.",
+                "recommend": true,
+                "email": "1@1","created_at": "02.04.2023"
+            },
+            {
+                "author": "witchy_boi",
+                "rating": 8,
+                "title": "Найкраща гра по Гаррі Поттеру",
+                "text": "Світ дуже детальний, фанати будуть у захваті.",
+                "recommend": false,
+                "email": "1@1","created_at": "15.02.2023"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "link": "alan-wake-2",
+        "name": "Alan Wake II",
+        "prev_image": "/data/games/images/alan_wake_2_1.webp",
+        "gallery": [
+            "/data/games/images/alan_wake_2_1.webp",
+            "/data/games/images/alan_wake_2_2.webp",
+            "/data/games/images/alan_wake_2_3.webp"
+        ],
+        "genre": [
+            "Horror",
+            "Thriller"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": true,
+        "language": [
+            "Українська"
+        ],
+        "price": 169,
+        "discount": 0.3,
+        "created_at": "27.10.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "горор, трилер"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Remedy Entertainment"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "horror",
+            "mystery"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "horrorFan_88",
+                "rating": 9,
+                "title": "Темна казка",
+                "text": "Атмосфера тримає в напрузі до кінця.",
+                "recommend": true,
+                "email": "1@1","created_at": "30.10.2023"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "link": "starfield",
+        "name": "Starfield",
+        "prev_image": "/data/games/images/starfield_1.webp",
+        "gallery": [
+            "/data/games/images/starfield_1.webp",
+            "/data/games/images/starfield_2.webp",
+            "/data/games/images/starfield_3.webp"
+        ],
+        "genre": [
+            "Sci-Fi RPG"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": false,
+        "language": [
+            "Українська"
+        ],
+        "price": 199,
+        "discount": 0.4,
+        "created_at": "06.09.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "фантастика, RPG"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Bethesda"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "space",
+            "exploration"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "astrogeek",
+                "rating": 8,
+                "title": "Масштабно, але трохи порожньо",
+                "text": "Космос гарний, але хочеться більше подій.",
+                "recommend": true,
+                "email": "1@1","created_at": "15.09.2023"
+            },
+            {
+                "author": "bethesdafan",
+                "rating": 7,
+                "title": "Fallout у космосі",
+                "text": "Якщо любите Bethesda — вам зайде.",
+                "recommend": true,
+                "email": "1@1","created_at": "17.09.2023"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "link": "hades-1",
+        "name": "Hades I",
+        "prev_image": "/data/games/images/hades_1.webp",
+        "gallery": [
+            "/data/games/images/hades_1.webp",
+            "/data/games/images/hades_2.webp",
+            "/data/games/images/hades_3.webp"
+        ],
+        "genre": [
+            "Roguelike"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": false,
+        "language": [
+            "English"
+        ],
+        "price": 129,
+        "discount": 0.2,
+        "created_at": "14.05.2025",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "рогалик, екшн"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows, macos"
+            },
+            {
+                "label": "автор",
+                "value": "Supergiant Games"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "roguelike",
+            "indie",
+            "action"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "indiequeen",
+                "rating": 9,
+                "title": "Не гірше першої",
+                "text": "Динаміка і дизайн — топ.",
+                "recommend": true,
+                "email": "1@1","created_at": "18.05.2025"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "link": "resident-evil-4-remake",
+        "name": "Resident Evil 4 Remake",
+        "prev_image": "/data/games/images/resident_evil_4_1.webp",
+        "gallery": [
+            "/data/games/images/resident_evil_4_1.webp",
+            "/data/games/images/resident_evil_4_2.webp",
+            "/data/games/images/resident_evil_4_3.webp"
+        ],
+        "genre": [
+            "Horror",
+            "Action"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": false,
+        "language": [
+            "Українська",
+            "English"
+        ],
+        "price": 159,
+        "discount": 0.35,
+        "created_at": "24.03.2023",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "горор, екшн"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "частково"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "Capcom"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "remake",
+            "zombie",
+            "survival"
+        ],
+        "hot_game": false,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "leonF",
+                "rating": 10,
+                "title": "Ідеальне переосмислення",
+                "text": "Все, що любив у старій грі, стало ще кращим.",
+                "recommend": true,
+                "email": "1@1","created_at": "25.03.2023"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "link": "stalker-2",
+        "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+        "prev_image": "/data/games/images/stalker_2_1.webp",
+        "gallery": [
+            "/data/games/images/stalker_2_1.webp",
+            "/data/games/images/stalker_2_2.webp",
+            "/data/games/images/stalker_2_3.webp"
+        ],
+        "genre": [
+            "FPS",
+            "Survival"
+        ],
+        "platforms": [
+            {
+                "id": "xbox",
+                "label": "XBox"
+            },
+            {
+                "id": "playstation",
+                "label": "PlayStation5"
+            },
+            {
+                "id": "steam",
+                "label": "Steam"
+            }
+        ],
+        "multiplayer": false,
+        "language": [
+            "Українська",
+            "English"
+        ],
+        "price": 189,
+        "discount": 0.1,
+        "created_at": "02.12.2025",
+        "available": true,
+        "info": [
+            {
+                "label": "жанр",
+                "value": "виживання, FPS"
+            },
+            {
+                "label": "падтримка VR",
+                "value": "ні"
+            },
+            {
+                "label": "операційна система",
+                "value": "windows"
+            },
+            {
+                "label": "автор",
+                "value": "GSC Game World"
+            },
+            {
+                "label": "регіон активації",
+                "value": "глобальний"
+            }
+        ],
+        "key_words": [
+            "чорнобиль",
+            "шутер",
+            "open world"
+        ],
+        "hot_game": true,
+        "description": "text",
+        "reviews": [
+            {
+                "author": "zonewalker",
+                "rating": 9,
+                "title": "Зона повернулась",
+                "text": "Атмосфера та геймплей — саме те, чого чекали.",
+                "recommend": true,
+                "email": "1@1","created_at": "03.12.2025"
+            },
+            {
+                "author": "realstalker",
+                "rating": 8,
+                "title": "Гарно, але ще є баги",
+                "text": "Дуже амбітно, чекаємо патчі.",
+                "recommend": true,
+                "email": "1@1","created_at": "05.12.2025"
+            }
+        ]
+    }
+]

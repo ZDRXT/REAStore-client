@@ -3,7 +3,7 @@ import path from 'path'
 
 class ServerGames {
     constructor() {
-        this.url = ['public', 'data', 'games', 'products.json']
+        this.url = ['data', 'games', 'products.json']
       }
       
       getAllGames() {
