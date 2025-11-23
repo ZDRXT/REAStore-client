@@ -6,9 +6,17 @@ class ServerGames {
     }
 
     async getAllGames() {
+        console.log("1")
         try {
+            console.log("2")
+
             const res = await fetch(this.url)
+            
+            console.log("3", res)
+            
             const data = await res.json()
+
+            console.log("4", data)
 
             return data
         } catch (error) {
