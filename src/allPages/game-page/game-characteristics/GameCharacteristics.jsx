@@ -14,21 +14,23 @@ const GameCharacteristics = ({ game }) => {
                     <div className="divider"></div>
 
                     <table>
-                        {
-                            game && game.info ? game.info.map((element, index) => {
-                                return (
-                                    <tr key={index}>
-                                        <td>
-                                            {element.label}
-                                        </td>
+                        <tbody>
+                            {
+                                game && game.info ? game.info.map((element, index) => {
+                                    return (
+                                        <tr key={index}>
+                                            <td>
+                                                {element.label}
+                                            </td>
 
-                                        <td>
-                                            {element.value}
-                                        </td>
-                                    </tr>
-                                )
-                            }) : ""
-                        }
+                                            <td>
+                                                {element.value}
+                                            </td>
+                                        </tr>
+                                    )
+                                }) : ""
+                            }
+                        </tbody>
                     </table>
                 </div>
             </div>

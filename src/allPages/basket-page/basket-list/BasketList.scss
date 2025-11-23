@@ -1,0 +1,155 @@
+.BasketList {
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: 200px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        border: 2px solid var(--darkgrey);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    &-deletebtn {
+        background: none;
+        border: none;
+        color: red;
+        cursor: pointer;
+    }
+
+    &-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__total {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+        background-color: var(--lightgrey);
+        padding: 3px;
+        border-radius: 8px;
+        gap: 10px;
+
+        button {
+            padding: 7px 10px;
+            border-radius: 5px;
+            background: var(--background);
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    &-info {
+        flex: 1;
+        padding: 15px;
+    }
+
+    &-summary {
+        position: sticky;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid var(--darkgrey);
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px;
+        height: fit-content;
+
+        &-products,
+        &-transport {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        &__gotoorder {
+            background: var(--main);
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .BasketList {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 0 0 14px 0;
+        }
+
+        &-item {
+            border-radius: 14px;
+            padding-bottom: 30px;
+        }
+
+        &-header {
+            font-size: 12px;
+            align-items: flex-start;
+
+            h2 {
+                margin-bottom: 6px;
+                height: 42px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+        }
+
+        &-info {
+            padding: 6px;
+        }
+
+        &__total {
+            position: absolute;
+            left: 0px;
+            bottom: 6px;
+            width: 100%;
+            padding: 0 6px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

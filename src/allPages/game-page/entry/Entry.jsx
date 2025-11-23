@@ -8,9 +8,12 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-import { Flame, ShoppingCart } from 'lucide-react';
+import { Flame } from 'lucide-react';
 
 import "./Entry.scss"
+
+import AddToBasketBtn from '@/components/add-to-basket-btn/AddToBasketBtn';
+
 
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
@@ -38,9 +41,9 @@ const Entry = ({ game }) => {
                                 className="Entry-gallery__secondary--slider"
                                 breakpoints={{
                                     1024: {
-                                      spaceBetween: 10,
+                                        spaceBetween: 10,
                                     },
-                                  }}
+                                }}
                             >
                                 {game.gallery.map((img, index) => {
                                     return (
@@ -95,7 +98,7 @@ const Entry = ({ game }) => {
                         </div> : ""}
 
                         <div className="Entry-content__button">
-                            <button className="btn"><ShoppingCart /><span>До кошика</span></button>
+                            <AddToBasketBtn type='large' productId={game.id}/>
                         </div>
 
                         <div className="divider"></div>

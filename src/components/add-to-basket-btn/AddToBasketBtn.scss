@@ -1,0 +1,38 @@
+.AddToBasketBtn{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+    &.small-btn{
+        justify-content: center;
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 36px;
+        height: 36px;
+        background: none;
+        border: 2px solid var(--main);
+        color: var(--main);
+        
+        &:hover {
+            background: var(--main);
+            color: var(--black);
+        }
+    }
+    
+    &.large-btn{
+        height: 38px;
+        background: var(--main);
+        border: 2px solid var(--mainborder);
+        padding: 0 6px;
+        gap: 6px;
+
+        &:hover {
+            background: var(--background);
+            color: var(--main);
+        }
+    }
+
+}

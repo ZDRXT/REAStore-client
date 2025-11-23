@@ -2,10 +2,12 @@
 
 import "./ProductCard.scss"
 
-import { Flame, MessageSquareMore, ShoppingCart, Check } from "lucide-react"
+import { Flame, MessageSquareMore } from "lucide-react"
 import { roundToHalf } from "@/utils/utils";
 import Rating from '@mui/material/Rating';
 import Link from "next/link";
+
+import AddToBasketBtn from "../add-to-basket-btn/AddToBasketBtn";
 
 const ProductCard = ({ product }) => {
     const { name, available, reviews, price, prev_image, hot_game, discount, link } = product
@@ -31,7 +33,7 @@ const ProductCard = ({ product }) => {
                 <div className="in_stock">{available ? <span className="green">В наявності</span> : <span className="red">Немає в наявності</span>}</div>
                 <div className="reviews"><Rating name="read-only" max={5} value={roundToHalf(averageRating)} readOnly /> <figure><MessageSquareMore /><span>{reviews.length}</span></figure></div>
                 <div className="price"><div className="current">{price} ₴</div><div className="full">{(price + price * discount).toFixed()} ₴</div></div>
-                <button className="buy-btn"><ShoppingCart size={24} /></button>
+                <AddToBasketBtn productId={product.id}/>
             </div>
 
         </div>

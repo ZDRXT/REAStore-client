@@ -3,6 +3,8 @@
 import { ShoppingBasket, AlignJustify, X } from "lucide-react"
 import { useState } from "react"
 
+import useBasketStore from "@/store/useBasketStore"
+
 import "./Header.scss"
 import Link from "next/link"
 import Logo from "../logo/Logo"
@@ -10,6 +12,7 @@ import Menu from "../menu/Menu"
 
 const Header = () => {
     const [activeMenu, setActiveMenu] = useState(false)
+    const { games } = useBasketStore()
 
     const toggleMenu = () => {
         setActiveMenu(prev => !prev)
@@ -23,7 +26,11 @@ const Header = () => {
 
                     <div className={`header-menu ${activeMenu ? "active" : ""}`}><Menu /></div>
 
-                    <div className="header-basket"><Link href="/basket"><ShoppingBasket /><figure>5</figure></Link></div>
+                    <div className="header-basket">
+                        <Link href="/basket"><ShoppingBasket />
+                            {games.length > 0 ? <figure>{games.length}</figure> : null}
+                        </Link>
+                    </div>
 
                     <button className="header-burger btn" onClick={toggleMenu}>
                         {activeMenu ? <X /> : <AlignJustify />}

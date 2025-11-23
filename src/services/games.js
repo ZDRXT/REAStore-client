@@ -1,4 +1,21 @@
+import { siteURL } from "@/constants/config"
+
 class Games {
+    constructor() {
+        this.url = siteURL + "/data/games/products.json"
+    }
+
+    async getAllGames() {
+        try {
+            const res = await fetch(this.url)
+            const data = await res.json()
+
+            return data
+        } catch (error) {
+            throw error
+        }
+    }
+
     getGamesByPlatform(allGames, platform) {
         try {
             const gamesByPlatform = allGames.filter(game => game.platforms.some(element => element.id === platform))
@@ -18,13 +35,13 @@ class Games {
             if (filters.platforms) {
                 const selectedPlatforms = filters.platforms.toLowerCase().split(",");
                 const gamePlatforms = game.platforms.map(p => p.id.toLowerCase());
-                
-                const hasAnyPlatform = selectedPlatforms.some(platform => 
+
+                const hasAnyPlatform = selectedPlatforms.some(platform =>
                     gamePlatforms.includes(platform)
                 );
-                
+
                 if (!hasAnyPlatform) return false;
-            }     
+            }
 
             if ((filters.minPrice !== undefined && game.price < filters.minPrice) || (filters.maxPrice !== undefined && game.price > filters.maxPrice)) {
                 return false;
@@ -46,20 +63,19 @@ class Games {
 
             if (filters.other) {
                 let result = false
-            
+
                 if (filters.other.includes("available[true]")) result = result || game.available
                 if (filters.other.includes("available[false]")) result = result || !game.available
                 if (filters.other.includes("multiplayer[true]")) result = result || game.multiplayer
                 if (filters.other.includes("multiplayer[false]")) result = result || !game.multiplayer
                 if (filters.other.includes("hot_game")) result = result || game.hot_game
-            
+
                 return result
             }
-            
+
             return true;
         });
     }
-
 
     getRandomGames(allGames, count) {
         let randomGames = []

@@ -107,27 +107,6 @@
             }
         }
 
-        .buy-btn {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            bottom: 8px;
-            right: 8px;
-            width: 36px;
-            height: 36px;
-            background: none;
-            border: 2px solid var(--main);
-            border-radius: 10px;
-            color: var(--main);
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .buy-btn:hover {
-            background: var(--main);
-            color: var(--black);
-        }
     }
 }
 
