@@ -30,3 +30,23 @@ export function getCatalogTitle(baseText = "", filters = {}) {
 
     return title
 }
+
+export function generateRandomNumber(max = 10) {
+    return (Math.round(Math.random() * max))
+}
+
+export function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
+}
+
+export function getSubstring(string = "<202512281100.57445815180@smtp-relay.mailin.fr>") {
+    const substring = string.slice(
+        string.indexOf(".") + 1,
+        string.indexOf("@")
+    )
+    return substring
+}

@@ -90,7 +90,7 @@ const BasketList = () => {
                             <span>{totalPrice} ₴</span>
                         </div>
 
-                        <button className="BasketList-summary__gotoorder">Перейти до оформлення замовлення</button>
+                        <Link className="BasketList-summary__gotoorder" href={"/checkout"}>Перейти до оформлення замовлення</Link>
                     </div>
                 </div>
             </div>

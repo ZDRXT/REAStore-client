@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +27,21 @@ export default function RootLayout({ children }) {
         < Header />
         {children}
         < Footer />
-      </body>
+        
+        <Script id="zoho-salesiq-init" strategy="afterInteractive">
+          {`
+          window.$zoho = window.$zoho || {};
+          window.$zoho.salesiq = window.$zoho.salesiq || {
+            ready: function () {}
+          };
+        `}
+        </Script>
+
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zohopublic.eu/widget?wc=siqfa8b049ec24073cabd074a5bfa5b7703251962a6bff17e72a873c4a0edfacae5"
+          strategy="afterInteractive"
+        />      </body>
     </html>
   );
 }

@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "public_key": "sandbox_i78145946008",
+    "action": "pay",
+    "amount": 50,
+    "currency": "UAH",
+    "description": "Покупка тест",
+    "order_id": "1111",
+    "items": [
+        {
+            "amount": 2,
+            "price": 202,
+            "cost": 404,
+            "id": 123456
+        }
+    ],
+    "delivery_emails": [
+        "arsen.makukh@gmail.com"
+    ]
+}
+{
+    "version": 3,
+    "public_key": "sandbox_i78145946008",
+    "action": "reports"
+}

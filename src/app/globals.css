@@ -13,7 +13,7 @@
   --green: #00a619;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 155px;
 }
@@ -24,6 +24,11 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-height: 100dvh;
   color: var(--black);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +57,7 @@ a {
   cursor: pointer;
 }
 
-.all-products{
+.all-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,15 +72,23 @@ h2 {
   margin-bottom: 20px;
 }
 
-.divider{
+.divider {
   margin: 10px 0;
   height: 1px;
   width: 100%;
   background: var(--grey);
 }
 
+.loading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}
+
 @media all and (max-width: 1024px) {
-  html{
+  html {
     scroll-padding-top: 130px;
   }
 }

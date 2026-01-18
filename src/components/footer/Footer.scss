@@ -1,0 +1,23 @@
+.footer {
+    margin-top: auto;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-part {
+        align-items: left;
+
+        li {
+            list-style: none;
+            text-align: center;
+        }
+    }
+
+    &-nav__title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}

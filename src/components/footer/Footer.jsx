@@ -6,7 +6,7 @@ import Menu from "../menu/Menu"
 
 const Footer = () => {
     return (
-        <footer className="Footer">
+        <footer className="footer">
             <div className="container">
                 <div className="footer-wrapper">
                     <div className="footer-top">
@@ -20,20 +20,27 @@ const Footer = () => {
                         <div className="footer-part">
                             <div className="footer-nav__title">Навігація сайту</div>
 
-                            <Menu alternative={true}/>
+                            <Menu alternative={true} />
                         </div>
 
                         <div className="footer-part">
                             <div className="footer-nav__title">Години роботи</div>
                             <nav>
                                 <ul>
-                                    <li><span>Пн - Пт:</span> 8:00</li>
+                                    <li><span>Пн - Пт:</span>8:00 - 21:00</li>
                                 </ul>
                             </nav>
                         </div>
 
                         <div className="footer-part">
-                            
+                            <div className="footer-nav__title">Контакти</div>
+                            <nav>
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
 

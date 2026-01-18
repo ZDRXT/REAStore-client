@@ -2,6 +2,7 @@
 
 import Hero from "./hero/Hero"
 import FilteredGames from "./filtered-games/FilteredGames"
+import { generateGameKey } from "@/utils/steam-key-generator"
 
 const HomePage = ({ games }) => {
     return (
