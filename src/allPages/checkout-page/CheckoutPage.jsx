@@ -11,7 +11,6 @@ import useBasketStore from "@/store/useBasketStore"
 import gameService from "@/services/games"
 
 import emailService from "@/services/email"
-import paymentService from "@/services/payment"
 
 import { generateGameKey } from "@/utils/steam-key-generator.js"
 import { getSubstring } from "@/utils/utils"
@@ -115,20 +114,74 @@ const CheckoutPage = () => {
             templateId: 1
         }
 
-        emailService.sendEmail(data).then((data) => {
-            setCheckoutStatus({
-                type: "success",
-                message: `ID: ${data.messageId}`
-            })
-        }).catch((error) => {
-            setCheckoutStatus({
-                type: "error",
-                message: `${error.message}`
+        handlePayment().then(data => {
+            localStorage.setItem("orderId", data.order_id)
+            window.open(data.directUrl)
+            checkPayment(data.order_id)
+            console.log(data)
+        }) 
+
+        // emailService.sendEmail(data).then((data) => {
+        //     setCheckoutStatus({
+        //         type: "success",
+        //         message: `ID: ${data.messageId}`
+        //     })
+        // }).catch((error) => {
+        //     setCheckoutStatus({
+        //         type: "error",
+        //         message: `${error.message}`
+        //     })
+
+        // }).finally(() => {
+        //     setIsSending(false)
+        // })
+    }
+
+    const handlePayment = async () => {
+        try {
+            const res = await fetch("/api/liqpay/create", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({amount: totalPrice, descr: "покупка ігор"})
             })
 
-        }).finally(() => {
-            setIsSending(false)
-        })
+            if (!res.ok) throw new Error("Помилка сервера")
+            const data = await res.json()
+            return data
+        } catch (error) {
+            console.log(error.message)
+            throw error
+        }
+    }
+
+    const checkPayment = async (orderId) => {
+        let attempts = 0
+        const maxAttempts = 10
+
+        const checkInterval = setInterval(async () => {
+            if (attempts >= maxAttempts) return clearInterval(checkInterval)
+            
+            attempts++
+
+            try {
+                const res = await fetch("/api/liqpay/check", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({orderId})
+                })
+    
+                if (!res.ok) throw new Error("Помилка сервера")
+                const data = await res.json()
+                return data
+            } catch (error) {
+                console.log(error.message)
+                throw error
+            }
+        }, 10000)
     }
 
     return (

@@ -9,8 +9,8 @@ class Payment {
         this.version = 3
     }
 
-    _generateSignature(data) {
-        const json = JSON.stringify(data)
+    _generateSignature(entryData) {
+        const json = JSON.stringify(entryData)
         const data = Buffer.from(json).toString('base64');
         const signString = this.private_key + data + this.private_key;
         const signature = crypto
