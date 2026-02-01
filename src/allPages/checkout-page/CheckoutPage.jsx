@@ -45,7 +45,7 @@ const CheckoutPage = () => {
                 const exGame = allGames.find(element => element.id === item.id)
                 if (exGame) return { ...exGame, counts: item.counts }
             })
-            console.log(gamesData)
+
             const price = gamesData.reduce(
                 (accumulator, currentValue) => accumulator + currentValue.price * currentValue.counts, 0,
             );
@@ -71,7 +71,6 @@ const CheckoutPage = () => {
                     gameKeys += "<br>"
                 }
             }
-            console.log(gameKeys)
 
             return `
                 <tr>
@@ -101,7 +100,7 @@ const CheckoutPage = () => {
             </table>
         `
 
-        const data = {
+        const emailData = {
             params: {
                 username: userName,
                 order_number: Date.now(),
@@ -117,24 +116,28 @@ const CheckoutPage = () => {
         handlePayment().then(data => {
             localStorage.setItem("orderId", data.order_id)
             window.open(data.directUrl)
-            checkPayment(data.order_id)
-            console.log(data)
-        }) 
-
-        // emailService.sendEmail(data).then((data) => {
-        //     setCheckoutStatus({
-        //         type: "success",
-        //         message: `ID: ${data.messageId}`
-        //     })
-        // }).catch((error) => {
-        //     setCheckoutStatus({
-        //         type: "error",
-        //         message: `${error.message}`
-        //     })
-
-        // }).finally(() => {
-        //     setIsSending(false)
-        // })
+            checkPayment(data.order_id, emailData).then(data => {
+                if (data.status === "success") {
+                    setCheckoutStatus({
+                        type: "success",
+                        message: `ID: ${data.orderId}`
+                    })
+                }
+                if (data.status === "time ended") {
+                    setCheckoutStatus({
+                        type: "error",
+                        message: "Час на оплату вийшов"
+                    })
+                }
+            }).catch((error) => {
+                setCheckoutStatus({
+                    type: "error",
+                    message: `${error.message}`
+                })
+            }).finally(() => {
+                setIsSending(false)
+            })
+        })
     }
 
     const handlePayment = async () => {
@@ -144,7 +147,7 @@ const CheckoutPage = () => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({amount: totalPrice, descr: "покупка ігор"})
+                body: JSON.stringify({ amount: totalPrice, descr: "покупка ігор" })
             })
 
             if (!res.ok) throw new Error("Помилка сервера")
@@ -156,13 +159,18 @@ const CheckoutPage = () => {
         }
     }
 
-    const checkPayment = async (orderId) => {
+    const checkPayment = async (orderId, emailData) => {
         let attempts = 0
         const maxAttempts = 10
-
+        console.log("checkpayment", emailData)
         const checkInterval = setInterval(async () => {
-            if (attempts >= maxAttempts) return clearInterval(checkInterval)
-            
+            if (attempts >= maxAttempts) {
+                clearInterval(checkInterval)
+                return {
+                    status: "time ended"
+                }
+            }
+
             attempts++
 
             try {
@@ -171,11 +179,16 @@ const CheckoutPage = () => {
                     headers: {
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify({orderId})
+                    body: JSON.stringify({ orderId, emailData })
                 })
-    
+
                 if (!res.ok) throw new Error("Помилка сервера")
                 const data = await res.json()
+                console.log(1, data)
+                if (data.status === "success") {
+                    clearInterval(checkInterval)
+                }
+
                 return data
             } catch (error) {
                 console.log(error.message)

@@ -29,9 +29,8 @@ export async function POST(req) {
 
 async function getOrders() {
     try {
-        const data = await readFile(ordersPath)
+        const data = await readFile(ordersPath, "utf-8")
 
-        console.log(data)
         return JSON.parse(data)
     } catch (error) {
         return []

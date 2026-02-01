@@ -9,42 +9,106 @@ const ordersPath = path.join(process.cwd(), "data", "orders.json")
 
 export async function POST(req) {
     try {
-        const { orderId } = await req.json()
-        if (!orderId) return NextResponse.json({ message: "invalid orderId" }, { status: 400 })
+        console.log("=== /api/liqpay/check START ===")
+
+        const body = await req.json()
+        console.log("Request body:", body)
+
+        const { orderId, emailData } = body
+        console.log("route", emailData)
+        if (!orderId) {
+            console.log("❌ No orderId")
+            return NextResponse.json({ message: "invalid orderId" }, { status: 400 })
+        }
 
         const exOrders = await getOrders()
-        const orderIndex = exOrders.findIndex(element => element.order_id === orderId)
+        console.log("Loaded orders:", exOrders.length)
 
-        if (orderIndex === -1) return NextResponse.json({ message: "invalid exOrder" }, { status: 400 })
+        const orderIndex = exOrders.findIndex(e => e.orderId === orderId)
+        console.log("Found orderIndex:", orderIndex)
+
+        if (orderIndex === -1) {
+            console.log("❌ Order not found:", orderId)
+            return NextResponse.json({ message: "invalid exOrder" }, { status: 400 })
+        }
+
         const exOrder = exOrders[orderIndex]
-        if (exOrder.status === "success") return NextResponse.json({ message: "success exOrder", status: "success", orderId })
+        console.log("Existing order:", exOrder)
 
-        const orderData = await paymentService.getPaymentStatus(orderId)
-        console.log(orderData)
+        if (exOrder.status === "success") {
+            console.log("⚠️ Order already success")
+            return NextResponse.json({ message: "success exOrder", status: "success", orderId })
+        }
 
-        if (orderData.payment_id !== exOrder.payment_id) return NextResponse.json({ message: "invalid id" }, { status: 400 })
-        if (orderData.status !== "success") return NextResponse.json({ message: "pending order" }, { status: 400 })
-        if (orderData.amount !== exOrder.amount) return NextResponse.json({ message: "invalid amount" }, { status: 400 })
+        console.log("→ Requesting payment status from LiqPay...")
+        let orderData = await paymentService.getPaymentStatus(orderId)
 
-        exOrders.orderIndex.status = "success"
+        console.log("Raw orderData:", orderData)
+        console.log("orderData type:", typeof orderData)
+
+        // якщо раптом LiqPay вернув string
+        if (typeof orderData === "string") {
+            try {
+                const parsed = JSON.parse(orderData)
+                console.log("Parsed orderData:", parsed)
+                orderData = parsed
+            } catch (e) {
+                console.log("❌ Cannot parse orderData string")
+            }
+        }
+        if (orderData.status === "error") {
+            return NextResponse.json({ message: "order not found" }, { status: 400 })
+        }
+
+        console.log("Comparing fields:", orderData)
+        console.log("payment_id:", orderData.order_id, "vs", exOrder.orderId)
+        console.log("status:", orderData.status)
+        console.log("amount:", orderData.amount, "vs", exOrder.amount)
+
+        if (orderData.order_id !== exOrder.orderId) {
+            console.log("❌ payment_id mismatch")
+            return NextResponse.json({ message: "invalid id" }, { status: 400 })
+        }
+
+        if (orderData.status !== "success") {
+            console.log("⏳ Payment not success yet:", orderData.status)
+            return NextResponse.json({ message: "pending order" }, { status: 400 })
+        }
+
+        if (orderData.amount !== exOrder.amount) {
+            console.log("❌ Amount mismatch")
+            return NextResponse.json({ message: "invalid amount" }, { status: 400 })
+        }
+
+        console.log("✅ All checks passed, updating order status...")
+        exOrders[orderIndex].status = "success"
 
         await saveOrders(exOrders)
+        console.log("💾 Orders saved")
+
+        console.log("=== /api/liqpay/check END SUCCESS ===")
+        console.log(emailData)
+        const emailRes = await emailService.sendEmail( emailData )
+        console.log(emailRes)
+
         return NextResponse.json({
             message: "success exOrder",
             status: "success",
             orderId
         })
+
     } catch (error) {
-        console.error(error)
+        console.log("🔥 RouteCheck ERROR")
+        console.log(error)
         return NextResponse.json({ message: error.message }, { status: 500 })
     }
 }
 
+
 async function getOrders() {
     try {
-        const data = await readFile(ordersPath)
+        const data = await readFile(ordersPath, "utf-8")
 
-        console.log(data)
         return JSON.parse(data)
     } catch (error) {
         return []

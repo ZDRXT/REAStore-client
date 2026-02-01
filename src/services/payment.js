@@ -46,31 +46,62 @@ class Payment {
     }
 
     async getPaymentStatus(order_id) {
-        const statusData = {
-            version: this.version,
-            public_key: this.public_key,
-            action: 'status',
-            order_id: order_id,
+        try {
+            console.log("=== LiqPay getPaymentStatus START ===")
+            console.log("order_id:", order_id)
+    
+            const statusData = {
+                version: this.version,
+                public_key: this.public_key,
+                action: 'status',
+                order_id: order_id,
+            }
+    
+            console.log("statusData:", statusData)
+    
+            const { signature, data } = this._generateSignature(statusData)
+    
+            console.log("generated data:", data)
+            console.log("generated signature:", signature)
+    
+            const url = `${this.url}request`
+            console.log("LiqPay URL:", url)
+    
+            const res = await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams({ data, signature })
+            })
+    
+            console.log("HTTP status:", res.status, res.statusText)
+    
+            if (!res.ok) {
+                const errText = await res.text()
+                console.log("❌ LiqPay error body:", errText)
+                throw new Error(`liqpay error: ${res.statusText}`)
+            }
+    
+            const resData = await res.json()
+            console.log("Raw LiqPay response:", resData)
+    
+            const result = {
+                status: resData.status,
+                order_id: resData.order_id,
+                amount: resData.amount
+            }
+    
+            console.log("Mapped result:", result)
+            console.log("=== LiqPay getPaymentStatus END ===")
+    
+            return result
+        } catch (error) {
+            console.log("🔥 GetPaymentStatus ERROR")
+            console.log(error)
+            throw error
         }
-
-        const {signature, data} = this._generateSignature(statusData)
-        const url = `${this.url}request`
-        const res = await fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: new URLSearchParams({data, signature})
-        })
-        if (!res.ok) throw new Error(`liqpay error: ${res.statusText}`)
-        const resData = await res.json()
-
-        return {
-            status: resData.status,
-            payment_id: resData.payment_id,
-            amount: resData.amount
-        }
-    }
+    }    
 }
 
 const paymentService = new Payment()

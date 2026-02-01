@@ -22,8 +22,7 @@ class EmailService {
 
             const data = await res.json()
             
-            console.log(data, process.env.BREVO_API_KEY
-            )
+            console.log(data, process.env.BREVO_API_KEY)
 
             if (!data.messageId) throw new Error ("Щось пішло не так... Зверніться у підтримку")
             
